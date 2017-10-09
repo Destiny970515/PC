@@ -1,0 +1,205 @@
+/*主体内容*/
+#main {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*购物车*/
+#shopMessage {
+  /*左浮动，主边框，主宽度，上右左外边距*/
+  float: left;
+  border: 2px solid #ddd;
+  width: 1000px;
+  margin: 50px 100px 0 100px;
+}
+#shopMessage > ul {
+  /*宽高*/
+  width: 100%;
+  height: 50px;
+}
+#shopMessage > ul > li {
+  /*左浮动，高度，行高，字体水平对齐，宽度，右外边距*/
+  float: left;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 64px;
+  margin: 0 36.75px;
+}
+#shopMessage > ul > li:first-child {
+  /*左右外边距*/
+  margin: 0 336px 0 50px;
+}
+.favourable {
+  float: left;
+  width: 100%;
+  height: 30px;
+  line-height: 26px;
+  padding-left: 50px;
+  background: #eee;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  box-sizing: border-box;
+}
+.favourable > span {
+  margin-right: 10px;
+  color: #D0364E;
+  box-sizing: border-box;
+}
+#tb1 {
+  float: left;
+}
+.buyWares {
+  float: left;
+  width: 1000px;
+  height: 100px;
+}
+.buyWares > ul {
+  width: 1000px;
+  height: 100px;
+}
+.buyWares > ul > li {
+  float: left;
+  height: 100px;
+}
+.buyWares > ul > li:first-child > input {
+  margin: 41px 16px;
+  width: 18px;
+  height: 18px;
+}
+.buyWares > ul > li:nth-child(2) > a > img {
+  line-height: 0;
+  margin: 22px 16px 22px 0;
+}
+.buyWares > ul > li:nth-child(3) {
+  width: 160px;
+  color: #2B2B2B;
+}
+.buyWares > ul > li:nth-child(3) > span {
+  display: inline-block;
+  margin-top: 34px;
+  overflow: hidden;
+  height: 34px;
+  padding-right: 10px;
+}
+.buyWares > ul > li:nth-child(4) > span {
+  line-height: 100px;
+  color: #999;
+}
+.buyWares > ul > li:nth-child(5) {
+  margin-left: 55px;
+  font-size: 16px;
+  line-height: 100px;
+}
+.buyWares > ul > li:nth-child(6) {
+  margin-left: 60px;
+}
+.buyWares > ul > li:nth-child(6) > ul {
+  margin-top: 25px;
+}
+.buyWares > ul > li:nth-child(6) > ul > li {
+  float: left;
+  font-size: 14px;
+}
+.buyWares > ul > li:nth-child(6) > ul > li {
+  width: 30px;
+  height: 30px;
+  margin: 10px 5px 10px 0;
+  text-align: center;
+  line-height: 30px;
+  background: #ddd;
+  color: #2B2B2B;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.buyWares > ul > li:nth-child(6) > ul > li:nth-child(2) {
+  background: transparent;
+  border: 0;
+}
+.buyWares > ul > li:nth-child(6) > ul > li:nth-child(2) > input {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  padding: 0;
+  text-align: center;
+  outline: 0;
+  box-sizing: border-box;
+  vertical-align: 2px;
+}
+.buyWares > ul > li:nth-child(6) > ul > li:nth-child(2):hover {
+  cursor: text;
+}
+.buyWares > ul > li:nth-child(7) {
+  margin-left: 56px;
+  font-size: 16px;
+  line-height: 100px;
+}
+.buyWares > ul > li:nth-child(7) > span {
+  display: inline-block;
+  width: 52px;
+  text-align: center;
+}
+.buyWares > ul > li:last-child {
+  margin-left: 80px;
+}
+.buyWares > ul > li:last-child > ul {
+  margin-top: 34px;
+  text-align: center;
+}
+/*结算*/
+#amount {
+  float: left;
+  width: 1000px;
+  min-height: 50px;
+  background: #eee;
+  border-top: 2px solid #ddd;
+}
+#amount > p {
+  float: left;
+  line-height: 50px;
+  font-size: 15px;
+}
+#all_choose {
+  float: left;
+}
+#all_choose > input {
+  margin: 16px;
+  width: 18px;
+  height: 18px;
+}
+#btn-amount {
+  float: right;
+}
+#btn-amount > input {
+  width: 100px;
+  height: 50px;
+  background: #D0364E;
+  font-size: 15px;
+  color: #fff;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+#cho_amount {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+}
+#cho_amount > ul > li {
+  float: left;
+  font-size: 15px;
+}
+#cho_amount > ul > li:first-child {
+  margin-right: 10px;
+}
+#cho_amount > ul > li:last-child > span {
+  color: #D0364E;
+}
+.img_size {
+  width: 58px;
+  height: 58px;
+}

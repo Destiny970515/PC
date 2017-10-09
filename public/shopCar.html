@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <!--引入css样式文件-->
+    <link rel="stylesheet" href="css/shopCar.css"/>
+    <link rel="stylesheet" href="css/load.css"/>
+</head>
+<body>
+<!--动态生成头部-->
+<header id="load-header" class="clear"></header>
+<!--主体内容-->
+<section>
+    <!--购物车-->
+    <div id="main" class="clear">
+        <!--商品信息-->
+        <div id="shopMessage" class="clear">
+            <ul class="lf">
+                <li>商品信息</li>
+                <li>单价</li>
+                <li>数量</li>
+                <li>金额</li>
+                <li>操作</li>
+            </ul>
+            <!-- 享优惠-->
+            <p class="favourable clear"><span>已享优惠：¥19.50</span><a href="#">第二支半价，第三支免费&gt;&gt;</a></p>
+            <!-- 购买商品-->
+            <div id="tb1" class="clear">
+                <div class="buyWares clear">
+                    <ul class="lf">
+                        <li>
+                            <input type="checkbox"/>
+                        </li>
+                        <li>
+                            <a href="xiangqingye.html">
+                                <img src="images/product-s1.jpg"/>
+                            </a>
+                        </li>
+                        <li>
+                            <span>【三只松鼠_开口松子零食】坚果特产炒货东北红松子原味</span>
+                        </li>
+                        <li>
+                            <span>口味：原味 包装：手袋单人份</span>
+                        </li>
+                        <li>
+                            <span>¥10.00</span>
+                        </li>
+                        <li>
+                            <ul class="lf raise">
+                                <li class="${o.cid}">-</li>
+                                <li class="val">
+                                    <input type="text" value="1">
+                                </li>
+                                <li class="${o.cid}">+</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>¥10.00</span>
+                        </li>
+                        <li>
+                            <ul class="lf">
+                                <li><a href="#">移入收藏夹</a></li>
+                                <li><a href="#" class="btn-del">删除</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buyWares clear">
+                    <ul class="lf">
+                        <li>
+                            <input type="checkbox"/>
+                        </li>
+                        <li>
+                            <a href="xiangqingye.html">
+                                <img src="images/product-s1.jpg"/>
+                            </a>
+                        </li>
+                        <li>
+                            <span>【三只松鼠_开口松子零食】坚果特产炒货东北红松子原味</span>
+                        </li>
+                        <li>
+                            <span>口味：原味 包装：手袋单人份</span>
+                        </li>
+                        <li>
+                            <span>¥10.00</span>
+                        </li>
+                        <li>
+                            <ul class="lf raise">
+                                <li class="btn">-</li>
+                                <li class="val">
+                                    <input type="text" value="1">
+                                </li>
+                                <li class="btn">+</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>¥10.00</span>
+                        </li>
+                        <li>
+                            <ul class="lf">
+                                <li><a href="#">移入收藏夹</a></li>
+                                <li><a href="#" class="btn-del">删除</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buyWares clear">
+                    <ul class="lf">
+                        <li>
+                            <input type="checkbox"/>
+                        </li>
+                        <li>
+                            <a href="xiangqingye.html">
+                                <img src="images/product-s1.jpg"/>
+                            </a>
+                        </li>
+                        <li>
+                            <span>【三只松鼠_开口松子零食】坚果特产炒货东北红松子原味</span>
+                        </li>
+                        <li>
+                            <span>口味：原味 包装：手袋单人份</span>
+                        </li>
+                        <li>
+                            <span>¥10.00</span>
+                        </li>
+                        <li>
+                            <ul class="lf raise">
+                                <li class="btn">-</li>
+                                <li class="val">
+                                    <input type="text" value="1">
+                                </li>
+                                <li class="btn">+</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>¥10.00</span>
+                        </li>
+                        <li>
+                            <ul class="lf">
+                                <li><a href="#">移入收藏夹</a></li>
+                                <li><a href="#" class="btn-del">删除</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="amount">
+                <!--全选-->
+                <div id="all_choose">
+                    <input type="checkbox">
+                </div>
+                <p>全选</p>
+                <div id="btn-amount">
+                    <input type="button" name="amount" value="结算">
+                </div>
+                <div id="cho_amount">
+                    <ul class="lf">
+                        <li>已选取商品 <span class="totalNum">0</span> 件</li>
+                        <li>合计：<span>¥30.00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--动态生成底部-->
+<footer id="load-footer" class="clear"></footer>
+<!--引入js文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/load.js"></script>
+<script src="js/shopCar.js"></script>
+</body>
+</html>

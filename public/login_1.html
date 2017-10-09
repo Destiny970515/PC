@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <link rel="stylesheet" href="css/login_1.css"/>
+</head>
+<body>
+<!--1、头部内容-->
+<header>
+    <!--1、logo-->
+    <div id="header-top">
+        <a href="#"><img src="images/logobig.png"/></a>
+    </div>
+</header>
+<!--2、主体内容-->
+<section>
+    <!--1、登陆页面-->
+    <div id="main">
+        <!--2、图片-->
+        <div id="main_ph" class="lf">
+            <a href="#">
+                <img src="images/big.jpg">
+            </a>
+        </div>
+        <!--3、登陆-->
+        <div id="login" class="rt">
+            <!--1、登录商城-->
+            <div id="login_form" class="clear">
+                <form action="#" name="login" method="post" class="clear" enctype="application/x-www-form-urlencoded">
+                    <h1>登录商城</h1>
+                    <!--2、文本密码框-->
+                       <ul class="lf" id="ulogin">
+                    <li>
+                        <b class="b1"></b>
+                        <input type="text" id="uname" name="uname" maxlength="10" placeholder="邮箱/手机/用户名">
+                    </li>
+                    <li>
+                        <b class="b2"></b>
+                        <input type="password" id="upwd" name="upwd" maxlength="10" placeholder="请输入密码">
+                    </li>
+                    <li class="textMsg"></li>
+                </ul>
+                    <!--3、忘记密码，记住密码-->
+                    <div class="check clear">
+                        <input type="checkbox" name="forgt">记住密码
+                        <span><a href="#">忘记密码</a></span>
+                    </div>
+                    <!--4、登陆按钮-->
+                    <div class="login clear">
+                        <input type="button" value="登录" id="bt-login">
+                    </div>
+                    <!--5、合作登陆-->
+                    <div id="partners" class="clear">
+                        <ul class="lf">
+                            <li>
+                                <a href="#">
+                                    <i class="logo_1"></i>
+                                    QQ登录
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="logo_2"></i>
+                                    微信登录
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="logo_3"></i>
+                                    微博登录
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--6、用户注册-->
+                    <div id="register">
+                        <button><a href="login_2.html">注册</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--3、底部内容-->
+<footer>
+    <div id="footer">
+        <div id="footer_defray">
+            <p>
+                <a href="#">关于恒望</a>
+                <a href="#">合作伙伴</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站地图</a>
+                &copy;2015-2025 hengwang.com 版权所有
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+<script src="js/login_1.js"></script>
+</body>
+</html>

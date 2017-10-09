@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>邮箱注册</title>
+    <link rel="stylesheet" href="css/login_2.css"/>
+</head>
+<body>
+<!--1、头部内容-->
+<header>
+    <!--1、logo-->
+    <div id="header-top">
+        <a href="#"><img src="images/logobig.png"/></a>
+    </div>
+</header>
+<!--2、主体内容-->
+<section>
+    <!--1、注册页面-->
+    <div id="main">
+        <!--2、图片-->
+        <div id="main_ph" class="lf">
+            <a href="#">
+                <img src="images/big.jpg">
+            </a>
+        </div>
+        <!--3、注册-->
+        <div id="register" class="rt">
+            <!--1、邮箱注册、手机注册-->
+            <div id="register_form" class="clear">
+                <form action="#" name="register" method="get" class="clear" enctype="application/x-www-form-urlencoded">
+                    <div id="register_user" class="clear">
+                        <h1>用户注册</h1>
+                    </div>
+                    <!--2、注册框-->
+                    <div id="register_frame" class="clear">
+                        <ul class="lf">
+                            <li>
+                                <b class="b1"></b>
+                                <input name="username" id="uname" maxlength="10" placeholder="输入用户名">
+                            </li>
+                            <li>
+                                <b class="b3"></b>
+                                <input type="password" name="userpwd" id="upwd" maxlength="10" placeholder="输入密码">
+                            </li>
+                            <li>
+                                <b class="b1"></b>
+                                <input name="userphone" id="phone" maxlength="11" placeholder="输入手机号">
+                            </li>
+                            <li>
+                                <b class="b2"></b>
+                                <input name="useremail" id="email" placeholder="请输入邮箱账号">
+                            </li>
+                            <li>
+                                <b class="b1"></b>
+                                <input name="userage" id="age" placeholder="请输入年龄" maxlength="2">
+                            </li>
+
+                        </ul>
+                        <div id="agree">
+                            <input type="checkbox" name="agree"/>点击表示您同意商城《服务协议》
+                        </div>
+                        <div id="user_register">
+                            <input type="button" value="注册" id="btn1">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--3、底部内容-->
+<footer>
+    <div id="footer">
+        <div id="footer_defray">
+            <p>
+                <a href="#">关于恒望</a>
+                <a href="#">合作伙伴</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站地图</a>
+                &copy;2015-2025 hengwang.com 版权所有
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

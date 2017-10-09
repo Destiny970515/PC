@@ -1,0 +1,267 @@
+/************1、页面通用样式*************/
+body {
+  font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  vertical-align: bottom;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #D2364C;
+  text-decoration: underline;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+/*解决父元素高度问题*/
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*头部，尾部*/
+#header-top,
+#footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+/**************1、个人中心、登陆****************/
+#header-top {
+  /*高度，背景色*/
+  background: #f7f7f7;
+  height: 30px;
+}
+#user-load {
+  /*浮动，左右内边距20px*/
+  padding: 0 20px;
+}
+#user-load > p {
+  /*行高*/
+  float: left;
+  line-height: 30px;
+}
+#user-load > p > b {
+  /*边框，左右外边距*/
+  border-right: 1px solid #666;
+  margin-left: 5px;
+  margin-right: 4px;
+}
+#user-center {
+  /*右浮动*/
+  float: right;
+}
+#user-center > ul > li {
+  /*左浮动，行高*/
+  float: left;
+  line-height: 30px;
+  margin-left: 15px;
+}
+#user-center > ul > li > a {
+  /*a字体的宽度*/
+  width: 48px;
+}
+#user-center > ul > li > span {
+  /*行内块，icon的宽高，相对定位*/
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  bottom: -1px;
+}
+#user-center > ul > li > span.user {
+  /*图片定位，左外边距*/
+  background: url("../images/icon-02.png") no-repeat;
+  margin-right: 5px;
+}
+#user-center > ul > li > span.shop {
+  /*图片定位，左外边距*/
+  background: url("../images/icon-03.png") no-repeat;
+  margin-right: 5px;
+}
+#user-center > ul > li > span.love {
+  /*图片定位，左外边距*/
+  background: url("../images/icon-01.png") no-repeat;
+  margin-right: 5px;
+}
+/***********2、搜索栏***********/
+#lala-search {
+  /*左右内边距130px,上下内边距5px,高度,box-sizing*/
+  height: 100px;
+  margin: 5px 150px;
+  box-sizing: border-box;
+}
+#lala-search > a > img {
+  /*LOGO的右外边距*/
+  margin-right: 30px;
+}
+#search {
+  /*浮动，高度，宽度，外边距，背景色*/
+  float: right;
+  height: 50px;
+  width: 660px;
+  margin: 25px 0;
+  background-color: #D2364C;
+}
+.search-case {
+  /*搜索框：宽高，外边距，行内块元素，左内边距*/
+  float: left;
+  box-sizing: border-box;
+  height: 46px;
+  margin: 2px 0 2px 2px;
+  width: 523px;
+  padding: 0 10px;
+  border: none;
+}
+.search-button {
+  /*按钮：背景色，宽高，行内块元素，内边距为0，边框为0*/
+  float: left;
+  background-color: #D2364C;
+  height: 50px;
+  width: 135px;
+  border: none;
+  padding: 0;
+}
+.search-button > a {
+  /*行内块元素，宽高，行高，字体大小，字体颜色，取消下划线*/
+  display: inline-block;
+  height: 50px;
+  width: 135px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+#hot-search {
+  /*热门搜索：左浮动，上外边距，防止溢出*/
+  float: left;
+  margin-top: 6px;
+  height: 19px;
+  overflow: hidden;
+}
+#hot-search > span {
+  /*字体大小，字体颜色*/
+  font-size: 14px;
+  color: #999;
+}
+#hot-search > a {
+  /*字体大小，字体颜色，左右外边距，取消下划线*/
+  color: #999;
+  margin: 0 5px;
+  font-size: 14px;
+  text-decoration: none;
+}
+#hot-search > a:hover {
+  /*鼠标移到a改变颜色*/
+  color: #D2364C;
+}
+/*******3、导航栏*********/
+#nav-top {
+  /*导航父元素高度*/
+  float: left;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#nav-top > p {
+  /*左浮动*/
+  float: left;
+}
+#nav-top > p > a {
+  /*全部分类属性：宽高，行内块元素，背景色，行高，字体颜色，字体大小，取消下划线，水平对齐*/
+  width: 180px;
+  height: 50px;
+  display: inline-block;
+  background-color: #D2364C;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+#nav-home > ul > li {
+  /*左浮动*/
+  float: left;
+}
+#nav-home > ul > li > a {
+  /*行高，水平对齐，字体大小，背景色，行内块元素，宽高，取消下划线*/
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #2b2b2b;
+  display: inline-block;
+  width: 74px;
+  height: 50px;
+  text-decoration: none;
+}
+#nav-home > ul > li > b {
+  /*边框，外边距*/
+  border: 1px solid #666;
+  margin: 0 9px;
+}
+/*底部内容*/
+#footer {
+  /*上外边距*/
+  margin-top: 50px;
+}
+#footer_defray {
+  /*高度，上下边框颜色不同*/
+  height: 30px;
+  border-top: 1px solid #D0364E;
+  border-bottom: 1px solid #dedede;
+}
+#footer_defray > ul > li {
+  /*左浮动 水平居中对齐，高度*/
+  float: left;
+  text-align: center;
+  height: 30px;
+}
+#footer_defray > ul > li > a {
+  /*行内块元素，宽高，行高*/
+  display: inline-block;
+  height: 30px;
+  width: 74px;
+  line-height: 30px;
+}
+#footer_defray > ul > li > b {
+  /*边框，左右外边距*/
+  border: 1px solid #dddddd;
+  margin: 0 10px;
+}
+#footer > p {
+  /*上外边距，字体水平居中对齐*/
+  margin-top: 2px;
+  text-align: center;
+}
+#footer > p > a {
+  /*字体颜色*/
+  color: #2b2b2b;
+}
+#footer > p > a:hover {
+  /*鼠标移动到a的时候变颜色*/
+  color: #D0364E;
+}

@@ -1,0 +1,199 @@
+//定义样式
+@color-main:#D2364C;
+@color-fff:#fff;
+@border1:1px solid #ddd;
+@border2:2px solid #ddd;
+/*主体内容*/
+#main{
+  width:1200px;
+  margin: 0 auto;
+}
+/*相关搜索*/
+.search_text{
+  margin: 10px 0 0 10px;
+}
+/*搜索到相关商品*/
+.correlation{
+  margin-top: 10px;
+  border: 2px solid #ddd;
+  min-height: 200px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.correlation>h3{
+  margin-bottom: 6px;
+}
+/*多条件筛选商品选择*/
+.filtrate{
+
+}
+/*ul*/
+.brand,.variety,.choose{
+  /*宽度100%，最小go高度52，行高50*/
+  width: 100%;
+  min-height: 54px;
+  line-height: 54px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.brand{
+  /*第一个ul的上边框*/
+  border-top: 1px dashed #ddd;
+}
+.variety{
+  /*第二个ul的上下边框*/
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+/*所有li通用样式*/
+.brand>li,.variety>li,.choose>li{
+  float: left;
+  font-size: 16px;
+  width: 90px;
+  text-align: center;
+}
+/*所有第一个li字体加粗*/
+.brand>li:first-child,.variety>li:first-child,.choose>li:first-child{
+  font-size: 18px;
+  font-weight: bold;
+}
+/*所有第二个li字体为红色*/
+.brand>li:nth-child(2)>a,.variety>li:nth-child(2)>a,.choose>li:nth-child(2)>a{
+  color: @color-main;
+}
+/*从第二个li中，每个a增加padding值，取消下划线*/
+.brand>li>a,.variety>li>a,.choose>li>a{
+  padding: 6px;
+  text-decoration: none;
+}
+/*鼠标移动到li触发背景颜色*/
+.brand>li:hover a,.variety>li:hover a,.choose>li:hover a{
+  background: @color-main;
+  color: @color-fff;
+}
+/*销量排序*/
+.shop_sort{
+  margin-top: 10px;
+  min-height: 40px;
+  box-sizing: border-box;
+  border: @border2;
+}
+.shop_sort>ul>li{
+  float: left;
+  font-size: 18px;
+  line-height: 38px;
+  width: 90px;
+  text-align: center;
+  border-right: @border2;
+  cursor: pointer;
+}
+/*鼠标移动到当前li触发背景色*/
+.shop_sort>ul>li:hover{
+  background: @color-main;
+  color: @color-fff;
+}
+/*相关商品*/
+.shop_top{
+  padding: 20px;
+  box-sizing: border-box;
+}
+/*单个商品*/
+.shop_list{
+  float: left;
+  width: 220px;
+  min-height: 350px;
+  //border:@border1;
+  //outline-width: 20px;
+  outline: 2px solid #dddddd;
+  cursor: pointer;
+  margin: 0 12px 20px 0;
+}
+/*鼠标移动触发边框阴影特效*/
+.shop_list:hover{
+  box-shadow: 2px 8px 20px -5px #2b2b2b;
+}
+/*左右外边距样式*/
+.margin_left_right{
+  margin: 0 25px;
+}
+/*商品描述*/
+.shop_list>p{
+  font-size: 16px;
+  padding: 5px 5px 0;
+  height: 45px;
+  overflow: hidden;
+}
+/*价格*/
+.price{
+  width: 100%;
+  margin-top: 18px;
+  min-height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.price>li:first-child{
+  color: @color-main;
+}
+/*加入购物车*/
+.join_shopCar{
+  display: inline-block;
+  width: 100%;
+  margin-top:15px;
+  height: 30px;
+  background: @color-main;
+  color: @color-fff;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+/*鼠标移动到按钮背景颜色会改变*/
+.join_shopCar:hover{
+  background:#c03246;
+  color: @color-fff;
+  text-decoration: none;
+}
+/*数字跳转页面：通用样式*/
+.number_skip{
+  //float: right;
+  margin-top:20px;
+}
+.number_skip>ul>li{
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-left: 0;
+  background: #fff;
+}
+.number_skip>ul>li:first-child{
+  border-left: 1px solid #ddd;
+}
+//.number_skip>ul>li:nth-child(6){
+//  border: 0;
+//}
+.number_skip>ul>li>a{
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  text-decoration: none;
+}
+.number_skip>ul>li:hover{
+  background: #f5f5f5;
+}
+//.number_skip>ul>li:nth-child(6):hover{
+//  background: #fff;
+//}
+
+
+
+
+
+
+
+
+

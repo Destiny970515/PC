@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/xiangqingye.css"/>
+    <link rel="stylesheet" href="css/load.css"/>
+</head>
+<body>
+<!--1、头部内容-->
+<!--1.1、动态加载头部内容-->
+<header class="clear" id="load-header"></header>
+<!--2、主体内容-->
+<section class="clear">
+    <form action="">
+        <div id="main" class="clear">
+            <!--1、面包屑导航-->
+            <div id="crumbs">
+                <ul class="lf">
+                    <li>
+                        <a href="#">主页</a>
+                    </li>
+                    <li>
+                        <b>/</b>
+                    </li>
+                    <li>
+                        <a href="#">分类</a>
+                    </li>
+                    <li>
+                        <b>/</b>
+                    </li>
+                    <li>
+                        <a href="#">内容</a>
+                    </li>
+                </ul>
+            </div>
+            <!--2、商品详情-->
+            <div id="shop_text">
+                <!--2.1左边图片信息-->
+                <div id="photo_massage" class="lf">
+                    <!--2.1.1.1、放大镜特效-->
+                    <div id="mediumDiv">
+                        <img id="ph_m" src="images/product-s1-m.jpg"/>
+                        <div id="mask"></div>
+                        <div id="superMask"></div>
+                    </div>
+                    <div id="largeDiv"></div>
+                    <!--结束放大镜特效-->
+                    <!--2.1.1小图片-->
+                    <div id="photo_sm" class="clear">
+                        <p class="sm_button1 disabled"></p>
+                        <p class="sm_button2"></p>
+                        <ul class="lf" id="ph_sm">
+                            <li>
+                                <img src="images/product-s1.jpg"/>
+                            </li>
+                            <li>
+                                <img src="images/product-s2.jpg"/>
+                            </li>
+                            <li>
+                                <img src="images/product-s3.jpg"/>
+                            </li>
+                            <li>
+                                <img src="images/product-s1.jpg"/>
+                            </li>
+                            <li>
+                                <img src="images/product-s2.jpg"/>
+                            </li>
+                            <li>
+                                <img src="images/product-s3.jpg"/>
+                            </li>
+                            <li>
+                                <img src="images/product-s1.jpg"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--2.2右边商品信息-->
+                <div id="detail">
+                    <!--1、商品头部信息-->
+                    <h1>良品铺子 手剥松子218g 坚果炒货 巴西松子</h1>
+                    <!--2、商品价格-->
+                    <div class="shop_price clear">
+                        <ul>
+                            <li>店铺优惠</li>
+                            <li>促销价</li>
+                            <li>原价</li>
+                        </ul>
+                        <div id="shop_massage">
+                            <ul>
+                                <li>购物满2件打8折,慢3件打7折</li>
+                                <li>&yen;56.90</li>
+                                <li>&yen;98.00</li>
+                            </ul>
+                        </div>
+                        <p><a href="">点击领劵</a></p>
+                    </div>
+                    <!--3、配送城市-->
+                    <div id="go_city">
+                        <p>配送至</p>
+                        <div id="city_choose">
+                            <select id="select-province">
+                                <option value="-1">--请选择--</option>
+                            </select>
+                            <select id="select-city">
+                                <option value="-1">--请选择--</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--4、销量信息-->
+                    <div id="sales_volume" class="clear">
+                        <ul class="lf">
+                            <li>
+                                月销量
+                                <span>1015</span>
+                            </li>
+                            <li>
+                                累计销量
+                                <span>6454</span>
+                            </li>
+                            <li>
+                                累计评价
+                                <span>640</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--5、商品详情选择-->
+                    <div class="shop_choise clear">
+                        <ul>
+                            <li>口味</li>
+                            <li>包装</li>
+                            <li>数量</li>
+                        </ul>
+                        <div id="like_shop" class="like_shop">
+                            <ul class="lf">
+                                <li>
+                                    原味
+                                    <b></b>
+                                </li>
+                                <li>
+                                    奶油
+                                    <b></b>
+                                </li>
+                                <li>
+                                    炭烧
+                                    <b></b>
+                                </li>
+                                <li>
+                                    咸香
+                                    <b></b>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="package" class="package">
+                            <ul class="lf">
+                                <li>
+                                    手袋单人份
+                                    <b></b>
+                                </li>
+                                <li>
+                                    礼盒双人份
+                                    <b></b>
+                                </li>
+                                <li>
+                                    全家福礼包
+                                    <b></b>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="shop_quantity" class="shop_quantity clear">
+                            <ul class="lf">
+                                <li>-</li>
+                                <li>1</li>
+                                <li>+</li>
+                            </ul>
+                            <p>库存1000件</p>
+                        </div>
+                    </div>
+                    <!--6、购买、加入购物车-->
+                    <div id="shop_button">
+                        <!--<button>立即购买</button>-->
+                        <!--<button>加入购物车</button>-->
+                        <input type="button" value="立即购买">
+                        <input type="button" value="加入购物车">
+                    </div>
+                </div>
+            </div>
+            <div id="main-mid">
+            <!--3、左侧边栏-->
+                <div id="aside_left">
+                    <p>看了又看</p>
+                    <ul class="lf">
+                        <li>
+                            <a href="#"><img src="images/act4.png"></a>
+                            <span>【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</span>
+                            <p>¥35.90</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/act4.png"></a>
+                            <span>【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</span>
+                            <p>¥35.90</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/act4.png"></a>
+                            <span>【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</span>
+                            <p>¥35.90</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/act4.png"></a>
+                            <span>【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</span>
+                            <p>¥35.90</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/act4.png"></a>
+                            <span>【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</span>
+                            <p>¥35.90</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/act4.png"></a>
+                            <span>【三只松鼠_开口松子】零食坚果特产炒货东北红松子原味</span>
+                            <p>¥35.90</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--4、宝贝、用户评论，猜你喜欢-->
+                <div id="shop_bplike">
+                    <div id="shop_choice">
+                        <ul class="lf" >
+                            <li><a href="#content1">宝贝详情</a></li>
+                            <li><a href="#content2">全部评价</a></li>
+                            <li><a href="#content3">猜你喜欢</a></li>
+                        </ul>
+                    </div>
+                    <div id="container">
+                        <!--1、宝贝详情-->
+                        <div id="content1">
+                            <p>产品参数：</p>
+                                <ul class="lf">
+                                    <li>产品类型：烘炒类</li>
+                                    <li>配料表：进口松子、食用盐</li>
+                                    <li>产品标准号：GB/T 22165</li>
+                                    <li>食用方法：开袋去壳即食</li>
+                                </ul>
+                                <ul class="lf">
+                                    <li>原料产地：巴基斯坦</li>
+                                    <li>产品规格：210g</li>
+                                    <li>生产许可证编号：QS4201 1801 0026</li>
+                                    <li>生产日期：2017/05/15</li>
+                                </ul>
+                                <ul class="lf">
+                                    <li>产地：湖北省武汉市</li>
+                                    <li>保质期：180天</li>
+                                    <li>保存方法：请放置于常温、阴凉、通风</li>
+                                    <li>厂家联系方式：400-029-7552</li>
+                                </ul>
+                            <p>商品细节：</p>
+                            <div id="many-ph">
+                                <ul class="lf">
+                                    <li class="big_ph1"></li>
+                                    <li class="big_ph2"></li>
+                                    <li class="big_ph3"></li>
+                                    <li class="big_ph4"></li>
+                                    <li class="big_ph5"></li>
+                                    <li class="big_ph6"></li>
+                                    <li class="big_ph7"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--2、全部评价-->
+                        <div id="content2">
+                            <div id="impress">
+                                <ul class="lf">
+                                    <li>99<span>%</span></li>
+                                    <li>好评度</li>
+                                </ul>
+                                <!--2.1买家印象-->
+                                <div id="impress_love">
+                                    <p>买家印象</p>
+                                    <ul class="lf">
+                                        <li>"味道不错(2177)"</li>
+                                        <li>"颗粒饱满(1860)"</li>
+                                        <li>"口感好(1823)"</li>
+                                        <li>"商品不错(2052)"</li>
+                                        <li>"香脆可口(1863)"</li>
+                                        <li>"价格便宜(2654)"</li>
+                                        <li>"特价买的(1450)"</li>
+                                        <li>"皮很薄(2357)"</li>
+                                        <li>"赞不绝口(1684)"</li>
+                                    </ul>
+                                </div>
+                                <!--2.2好评，中评，差评-->
+                                <div id="discuss">
+                                    <ul class="lf">
+                                        <li><a href="#">全部评价(3204)</a></li>
+                                        <li><a href="#">好评(1962)</a></li>
+                                        <li><a href="#">中评(1084)</a></li>
+                                        <li><a href="#">差评(403)</a></li>
+                                    </ul>
+                                </div>
+                                <!--2.3评论-->
+                                <div id="buyer_discuss">
+                                    <div class="comment">
+                                        <p>b**1(匿名)评论于2017年5月15日 17:52</p>
+                                        <ul class="lf">
+                                            <li>评价：非常不错的坚果小吃，很好的食品，快递小哥给力啊！食品很棒！活动很给力！！</li>
+                                            <li>口味：奶油</li>
+                                            <li>包装：手袋单人份</li>
+                                            <li>数量：1</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**2(匿名)评论于2017年6月15日 16:20</p>
+                                        <ul class="lf">
+                                            <li>评价：很好吃，迷上了三只松鼠</li>
+                                            <li>口味：原味</li>
+                                            <li>包装：礼盒双人份</li>
+                                            <li>数量：2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**3(匿名)评论于2017年6月18日 09:20</p>
+                                        <ul class="lf">
+                                            <li>评价：我的是2017.4.21生产的日期还行，挺好吃的，希望多做活动</li>
+                                            <li>口味：炭烧</li>
+                                            <li>包装：全家福礼包</li>
+                                            <li>数量：3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**4(匿名)评论于2017年7月01日 12:20</p>
+                                        <ul class="lf">
+                                            <li>评价：威夷果挺好吃的，不错不错，很喜欢这个三只松鼠夏威夷果吃完了以后还会再买三只松鼠，夏威夷果挺好吃的，不错，不错</li>
+                                            <li>口味：咸香</li>
+                                            <li>包装：全家福礼包</li>
+                                            <li>数量：5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**1(匿名)评论于2017年5月15日 17:52</p>
+                                        <ul class="lf">
+                                            <li>评价：非常不错的坚果小吃，很好的食品，快递小哥给力啊！食品很棒！活动很给力！！</li>
+                                            <li>口味：奶油</li>
+                                            <li>包装：手袋单人份</li>
+                                            <li>数量：1</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**2(匿名)评论于2017年6月15日 16:20</p>
+                                        <ul class="lf">
+                                            <li>评价：很好吃，迷上了三只松鼠</li>
+                                            <li>口味：原味</li>
+                                            <li>包装：礼盒双人份</li>
+                                            <li>数量：2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**3(匿名)评论于2017年6月18日 09:20</p>
+                                        <ul class="lf">
+                                            <li>评价：我的是2017.4.21生产的日期还行，挺好吃的，希望多做活动</li>
+                                            <li>口味：炭烧</li>
+                                            <li>包装：全家福礼包</li>
+                                            <li>数量：3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**4(匿名)评论于2017年7月01日 12:20</p>
+                                        <ul class="lf">
+                                            <li>评价：威夷果挺好吃的，不错不错，很喜欢这个三只松鼠夏威夷果吃完了以后还会再买三只松鼠，夏威夷果挺好吃的，不错，不错</li>
+                                            <li>口味：咸香</li>
+                                            <li>包装：全家福礼包</li>
+                                            <li>数量：5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**1(匿名)评论于2017年5月15日 17:52</p>
+                                        <ul class="lf">
+                                            <li>评价：非常不错的坚果小吃，很好的食品，快递小哥给力啊！食品很棒！活动很给力！！</li>
+                                            <li>口味：奶油</li>
+                                            <li>包装：手袋单人份</li>
+                                            <li>数量：1</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**2(匿名)评论于2017年6月15日 16:20</p>
+                                        <ul class="lf">
+                                            <li>评价：很好吃，迷上了三只松鼠</li>
+                                            <li>口味：原味</li>
+                                            <li>包装：礼盒双人份</li>
+                                            <li>数量：2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**3(匿名)评论于2017年6月18日 09:20</p>
+                                        <ul class="lf">
+                                            <li>评价：我的是2017.4.21生产的日期还行，挺好吃的，希望多做活动</li>
+                                            <li>口味：炭烧</li>
+                                            <li>包装：全家福礼包</li>
+                                            <li>数量：3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment">
+                                        <p>b**4(匿名)评论于2017年7月01日 12:20</p>
+                                        <ul class="lf">
+                                            <li>评价：威夷果挺好吃的，不错不错，很喜欢这个三只松鼠夏威夷果吃完了以后还会再买三只松鼠，夏威夷果挺好吃的，不错，不错</li>
+                                            <li>口味：咸香</li>
+                                            <li>包装：全家福礼包</li>
+                                            <li>数量：5</li>
+                                        </ul>
+                                    </div>
+                                    <!--2.4点击数字跳转页面-->
+                                    <div class="number_skip">
+                                        <ul class="lf">
+                                            <li><a href="#">上一页</a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li>...</li>
+                                            <li><a href="#">下一页</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--3、猜你喜欢-->
+                        <div id="content3">
+                            <div id="guess_love">
+                                <ul class="lf">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/guess.jpg">
+                                    </a>
+                                    <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                    <div class="join_shopCar">
+                                        <span>￥298.00</span>
+                                        <p>
+                                            <i class="icon_1"></i>
+                                            <a href="#">加入购物车</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/guess.jpg">
+                                    </a>
+                                    <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                    <div class="join_shopCar">
+                                        <span>￥298.00</span>
+                                        <p>
+                                            <i class="icon_1"></i>
+                                            <a href="#">加入购物车</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/guess.jpg">
+                                    </a>
+                                    <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                    <div class="join_shopCar">
+                                        <span>￥298.00</span>
+                                        <p>
+                                            <i class="icon_1"></i>
+                                            <a href="#">加入购物车</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/guess.jpg">
+                                    </a>
+                                    <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                    <div class="join_shopCar">
+                                        <span>￥298.00</span>
+                                        <p>
+                                            <i class="icon_1"></i>
+                                            <a href="#">加入购物车</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                                <ul class="lf">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="lf">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="lf">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="lf">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/guess.jpg">
+                                        </a>
+                                        <p>【良品店铺_开口松子】零食坚果 特产炒货 东北红松子奶油味</p>
+                                        <div class="join_shopCar">
+                                            <span>￥298.00</span>
+                                            <p>
+                                                <i class="icon_1"></i>
+                                                <a href="#">加入购物车</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--2.4点击数字跳转页面-->
+                                <div class="number_skip">
+                                    <ul class="lf">
+                                        <li><a href="#">上一页</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li>...</li>
+                                        <li><a href="#">下一页</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+<!--3、底部内容-->
+<!--3.1、动态加载尾部内容-->
+<footer class="clear" id="load-footer"></footer>
+<!--1、引入jquery文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<!--2、引入详情页js文件-->
+<script src="js/xiangqingye.js"></script>
+<!--3、引入动态加载头部尾部js-->
+<script src="js/load.js"></script>
+</body>
+</html>
