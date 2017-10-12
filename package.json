@@ -8,7 +8,7 @@
     "email": "592150131@qq.com"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.16.2"
   },
   "engines": {
     "node": "0.10.36"
